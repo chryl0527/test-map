@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sumsoon.zzz.mapper.OthMapper">
+
+    <sql id="col">
+        maa,sadf,wrsa,sfds
+    </sql>
+    <!-- 返回JavaBean -->
+    <select id="query0" resultType="com.sumsoon.zzz.po.XXX" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                #{maa}"%"
+            </if>
+        </where>
+
+    </select>
+    <!-- string直接用 -->
+    <select id="query1" resultType="map" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                #{maa}"%"
+            </if>
+        </where>
+
+    </select>
+    <!-- map点 -->
+    <select id="query2" resultType="map" parameterType="map">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="paramsMap!=null">
+                maa
+                LIKE
+                #{paramsMap.maa}"%"
+            </if>
+        </where>
+
+    </select>
+    <!-- 对象点 -->
+    <select id="query3" resultType="map" parameterType="com.sumsoon.zzz.po.XXX">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="xxx!=null">
+                maa
+                LIKE
+                #{xxx.maa}"%"
+            </if>
+
+        </where>
+    </select>
+    <!-- $ -->
+    <select id="query4" resultType="map" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                '${maa}%'
+            </if>
+        </where>
+
+    </select>
+    <!-- sql中的字符串拼接函数 -->
+    <select id="query5" resultType="map" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                CONCAT(CONCAT('%', #{maa},'%'))
+            </if>
+        </where>
+
+    </select>
+    <select id="query55" resultType="map" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                concat('%',#{maa},'%')
+--                 concat(#{maa},'%')
+            </if>
+        </where>
+
+    </select>
+    <!-- 分页:从0开始
+    limit 2,3   :从第三条开始,展示3条数据
+     -->
+    <select id="query6" resultType="map" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        -- WHERE 别直接写where
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                CONCAT(CONCAT('%', #{maa},'%'))
+            </if>
+        </where>
+
+        limit 2,3
+    </select>
+</mapper>

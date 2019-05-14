@@ -1,0 +1,146 @@
+2019-05-13 14:35:55,537 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.119 seconds (JVM running for 4.832)
+2019-05-13 14:35:55,548 INFO (TestMapApplication.java:17)- =========================
+2019-05-13 14:35:55,548 ERROR (TestMapApplication.java:19)- 日志测试 log error
+2019-05-13 15:04:48,525 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7896 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:04:48,531 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:04:52,040 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.125 seconds (JVM running for 4.744)
+2019-05-13 15:04:52,044 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:04:52,044 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:06:41,363 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 5248 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:06:41,368 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:06:45,383 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.601 seconds (JVM running for 5.242)
+2019-05-13 15:06:45,386 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:06:45,386 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:15:13,492 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 5560 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:15:13,497 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:15:16,613 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 3.665 seconds (JVM running for 4.368)
+2019-05-13 15:15:16,616 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:15:16,617 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:40:51,037 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7524 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:40:51,044 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:40:55,597 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.188 seconds (JVM running for 6.065)
+2019-05-13 15:40:55,601 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:40:55,601 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:42:47,223 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 1424 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:42:47,229 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:42:50,812 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.288 seconds (JVM running for 5.01)
+2019-05-13 15:42:50,815 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:42:50,815 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:43:30,151 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6592 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:43:30,158 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:43:33,889 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.358 seconds (JVM running for 5.013)
+2019-05-13 15:43:33,892 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:43:33,893 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:45:05,522 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6604 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:45:05,530 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:45:09,772 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.041 seconds (JVM running for 5.858)
+2019-05-13 15:45:09,776 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:45:09,776 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:49:26,868 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 9812 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:49:26,875 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:49:30,792 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.565 seconds (JVM running for 5.329)
+2019-05-13 15:49:30,796 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:49:30,796 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:50:22,225 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6072 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:50:22,231 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:50:25,831 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.248 seconds (JVM running for 4.917)
+2019-05-13 15:50:25,834 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:50:25,834 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:51:01,938 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 5612 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:51:01,944 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:51:05,720 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.799 seconds (JVM running for 5.509)
+2019-05-13 15:51:05,726 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:51:05,726 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:51:46,543 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8588 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:51:46,553 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:51:51,133 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.298 seconds (JVM running for 6.135)
+2019-05-13 15:51:51,137 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:51:51,137 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 15:58:48,789 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 9292 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 15:58:48,794 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 15:58:52,741 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.591 seconds (JVM running for 5.28)
+2019-05-13 15:58:52,745 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 15:58:52,746 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:03:42,856 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6080 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:03:42,859 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:03:47,180 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.897 seconds (JVM running for 5.581)
+2019-05-13 16:03:47,183 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:03:47,183 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:09:27,325 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8136 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:09:27,338 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:09:31,328 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.745 seconds (JVM running for 5.454)
+2019-05-13 16:09:31,332 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:09:31,332 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:16:48,254 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10680 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:16:48,260 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:16:52,140 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.462 seconds (JVM running for 5.099)
+2019-05-13 16:16:52,143 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:16:52,143 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:17:14,422 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7608 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:17:14,428 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:17:18,151 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.731 seconds (JVM running for 5.557)
+2019-05-13 16:17:18,154 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:17:18,154 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:17:34,948 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10412 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:17:34,957 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:17:38,730 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.484 seconds (JVM running for 5.317)
+2019-05-13 16:17:38,734 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:17:38,734 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:20:06,869 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7524 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:20:06,875 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:20:11,202 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.038 seconds (JVM running for 5.759)
+2019-05-13 16:20:11,206 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:20:11,206 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:22:00,525 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7460 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:22:00,530 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:22:04,577 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.656 seconds (JVM running for 5.364)
+2019-05-13 16:22:04,580 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:22:04,580 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 16:35:25,683 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7796 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 16:35:25,688 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 16:35:29,985 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.973 seconds (JVM running for 5.714)
+2019-05-13 16:35:29,989 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 16:35:29,989 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:01:57,422 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 9616 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:01:57,430 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:02:01,334 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.755 seconds (JVM running for 5.548)
+2019-05-13 17:02:01,338 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:02:01,338 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:02:37,416 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 3024 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:02:37,422 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:02:41,178 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.435 seconds (JVM running for 5.154)
+2019-05-13 17:02:41,181 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:02:41,181 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:03:14,450 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 5936 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:03:14,455 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:03:18,324 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.477 seconds (JVM running for 5.116)
+2019-05-13 17:03:18,327 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:03:18,328 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:13:17,147 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 1380 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:13:17,153 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:13:20,935 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.377 seconds (JVM running for 5.15)
+2019-05-13 17:13:20,938 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:13:20,938 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:13:46,346 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 11132 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:13:46,360 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:13:49,518 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.393 seconds (JVM running for 5.696)
+2019-05-13 17:13:49,523 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:13:49,523 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:14:06,334 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6988 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:14:06,340 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:14:09,958 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.403 seconds (JVM running for 5.251)
+2019-05-13 17:14:09,964 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:14:09,964 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:51:26,426 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10292 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:51:26,432 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:51:30,790 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.092 seconds (JVM running for 6.017)
+2019-05-13 17:51:30,793 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:51:30,793 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-13 17:51:32,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx -- WHERE 别直接写where WHERE maa LIKE ?"%" 
+2019-05-13 17:51:32,896 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-13 17:51:32,910 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-13 17:56:00,028 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 9236 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-13 17:56:00,034 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-13 17:56:04,053 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.723 seconds (JVM running for 5.428)
+2019-05-13 17:56:04,057 INFO (TestMapApplication.java:19)- =========================
+2019-05-13 17:56:04,057 ERROR (TestMapApplication.java:21)- 日志测试 log error

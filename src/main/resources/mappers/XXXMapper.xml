@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sumsoon.zzz.mapper.XXXMapper">
+  <resultMap id="BaseResultMap" type="com.sumsoon.zzz.po.XXX">
+    <id column="maa" jdbcType="VARCHAR" property="maa" />
+    <result column="sadf" jdbcType="VARCHAR" property="sadf" />
+    <result column="wrsa" jdbcType="VARCHAR" property="wrsa" />
+    <result column="sfds" jdbcType="VARCHAR" property="sfds" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    maa, sadf, wrsa, sfds
+  </sql>
+  <select id="selectByExample" parameterType="com.sumsoon.zzz.po.XXXExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from xxx
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from xxx
+    where maa = #{maa,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from xxx
+    where maa = #{maa,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.sumsoon.zzz.po.XXXExample">
+    delete from xxx
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sumsoon.zzz.po.XXX">
+    insert into xxx (maa, sadf, wrsa, 
+      sfds)
+    values (#{maa,jdbcType=VARCHAR}, #{sadf,jdbcType=VARCHAR}, #{wrsa,jdbcType=VARCHAR}, 
+      #{sfds,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sumsoon.zzz.po.XXX">
+    insert into xxx
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="maa != null">
+        maa,
+      </if>
+      <if test="sadf != null">
+        sadf,
+      </if>
+      <if test="wrsa != null">
+        wrsa,
+      </if>
+      <if test="sfds != null">
+        sfds,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="maa != null">
+        #{maa,jdbcType=VARCHAR},
+      </if>
+      <if test="sadf != null">
+        #{sadf,jdbcType=VARCHAR},
+      </if>
+      <if test="wrsa != null">
+        #{wrsa,jdbcType=VARCHAR},
+      </if>
+      <if test="sfds != null">
+        #{sfds,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sumsoon.zzz.po.XXXExample" resultType="java.lang.Long">
+    select count(*) from xxx
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update xxx
+    <set>
+      <if test="record.maa != null">
+        maa = #{record.maa,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sadf != null">
+        sadf = #{record.sadf,jdbcType=VARCHAR},
+      </if>
+      <if test="record.wrsa != null">
+        wrsa = #{record.wrsa,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sfds != null">
+        sfds = #{record.sfds,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update xxx
+    set maa = #{record.maa,jdbcType=VARCHAR},
+      sadf = #{record.sadf,jdbcType=VARCHAR},
+      wrsa = #{record.wrsa,jdbcType=VARCHAR},
+      sfds = #{record.sfds,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sumsoon.zzz.po.XXX">
+    update xxx
+    <set>
+      <if test="sadf != null">
+        sadf = #{sadf,jdbcType=VARCHAR},
+      </if>
+      <if test="wrsa != null">
+        wrsa = #{wrsa,jdbcType=VARCHAR},
+      </if>
+      <if test="sfds != null">
+        sfds = #{sfds,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where maa = #{maa,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sumsoon.zzz.po.XXX">
+    update xxx
+    set sadf = #{sadf,jdbcType=VARCHAR},
+      wrsa = #{wrsa,jdbcType=VARCHAR},
+      sfds = #{sfds,jdbcType=VARCHAR}
+    where maa = #{maa,jdbcType=VARCHAR}
+  </update>
+</mapper>

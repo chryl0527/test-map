@@ -28,9 +28,9 @@ public class TestContZZZ {
     @RequestMapping(value = "/mo")
     public Object show() {
 
-//        List<ZZZ> zzzes = zzzOthMapper.query01(new Date(70, 01, 03, 12, 00, 00), new Date(70, 07, 03, 12, 00, 00));
+        List<ZZZ> zzzes = zzzOthMapper.query01(new Date(70, 01, 03, 12, 00, 00), new Date(70, 07, 03, 12, 00, 00));
 //        List<ZZZ> zzzes = zzzOthMapper.query01(new Date(70, 01, 03, 12, 00, 00), null);
-        List<ZZZ> zzzes = zzzOthMapper.query01(null, new Date(70, 07, 03, 12, 00, 00));
+//        List<ZZZ> zzzes = zzzOthMapper.query01(null, new Date(70, 07, 03, 12, 00, 00));
 //        List<ZZZ> zzzes = zzzOthMapper.query01(null, null);
 
         return zzzes;

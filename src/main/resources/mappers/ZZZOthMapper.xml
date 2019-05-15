@@ -11,10 +11,10 @@
         SELECT * FROM zzz z
         <where>
             <if test="st!=null">
-                z.st &gt;=#{st}
+               AND z.st &gt;=#{st}
             </if>
             <if test="en!=null">
-                AND z.en&lt;=#{en}
+               AND z.en&lt;=#{en}
             </if>
         </where>
     </select>

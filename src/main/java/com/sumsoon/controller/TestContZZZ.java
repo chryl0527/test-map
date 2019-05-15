@@ -1,5 +1,6 @@
 package com.sumsoon.controller;
 
+import com.sumsoon.zzz.mapper.ZZZMapper;
 import com.sumsoon.zzz.mapper.ZZZOthMapper;
 import com.sumsoon.zzz.po.ZZZ;
 import lombok.extern.slf4j.Slf4j;
@@ -24,6 +25,8 @@ public class TestContZZZ {
 
     @Autowired
     private ZZZOthMapper zzzOthMapper;
+    @Autowired
+    private ZZZMapper zzzMapper;
 
     @RequestMapping(value = "/mo")
     public Object show() {
@@ -32,6 +35,15 @@ public class TestContZZZ {
 //        List<ZZZ> zzzes = zzzOthMapper.query01(new Date(70, 01, 03, 12, 00, 00), null);
 //        List<ZZZ> zzzes = zzzOthMapper.query01(null, new Date(70, 07, 03, 12, 00, 00));
 //        List<ZZZ> zzzes = zzzOthMapper.query01(null, null);
+
+        zzzMapper.insertSelective(new ZZZ("21213"
+                ,new Date(99,2,3,12,23,33)
+                ,12
+                ,new Date(99,2,3,12,23,33)
+                ,new Date(99,2,3,12,23,33)
+                , 22D,
+                new Date(99,2,3,12,23,33)
+        ));
 
         return zzzes;
     }

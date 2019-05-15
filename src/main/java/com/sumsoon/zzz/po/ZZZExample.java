@@ -202,6 +202,66 @@ public class ZZZExample {
             return (Criteria) this;
         }
 
+        public Criteria andTimstaIsNull() {
+            addCriterion("timsta is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaIsNotNull() {
+            addCriterion("timsta is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaEqualTo(Date value) {
+            addCriterion("timsta =", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaNotEqualTo(Date value) {
+            addCriterion("timsta <>", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaGreaterThan(Date value) {
+            addCriterion("timsta >", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaGreaterThanOrEqualTo(Date value) {
+            addCriterion("timsta >=", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaLessThan(Date value) {
+            addCriterion("timsta <", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaLessThanOrEqualTo(Date value) {
+            addCriterion("timsta <=", value, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaIn(List<Date> values) {
+            addCriterion("timsta in", values, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaNotIn(List<Date> values) {
+            addCriterion("timsta not in", values, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaBetween(Date value1, Date value2) {
+            addCriterion("timsta between", value1, value2, "timsta");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimstaNotBetween(Date value1, Date value2) {
+            addCriterion("timsta not between", value1, value2, "timsta");
+            return (Criteria) this;
+        }
+
         public Criteria andAsdIsNull() {
             addCriterion("asd is null");
             return (Criteria) this;

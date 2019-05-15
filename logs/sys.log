@@ -699,3 +699,43 @@
 2019-05-15 16:25:15,852 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM zzz z WHERE z.st >=? AND z.en<=? 
 2019-05-15 16:25:15,853 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1970-02-03 12:00:00.0(Timestamp), 1970-08-03 12:00:00.0(Timestamp)
 2019-05-15 16:25:15,856 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-15 18:23:33,524 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8060 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 18:23:33,529 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 18:23:37,242 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.335 seconds (JVM running for 4.981)
+2019-05-15 18:23:37,245 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 18:23:37,245 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 18:23:39,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM zzz z WHERE z.st >=? AND z.en<=? 
+2019-05-15 18:23:39,262 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1970-02-03 12:00:00.0(Timestamp), 1970-08-03 12:00:00.0(Timestamp)
+2019-05-15 18:23:39,280 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-15 18:26:34,937 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10864 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 18:26:34,942 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 18:26:38,632 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.26 seconds (JVM running for 4.834)
+2019-05-15 18:26:38,635 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 18:26:38,636 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 18:26:40,734 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM zzz z WHERE z.st >=? AND z.en<=? 
+2019-05-15 18:26:40,753 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1970-02-03 12:00:00.0(Timestamp), 1970-08-03 12:00:00.0(Timestamp)
+2019-05-15 18:26:40,768 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-15 18:26:40,771 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into zzz ( qwe, timsta, asd, zxc, st, fgh, en ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2019-05-15 18:26:40,773 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(String), 1999-03-03 12:23:33.0(Timestamp), 2(Integer), 2019-05-15(Date), 2019-05-15 18:26:40.769(Timestamp), 2.0(Double), 2019-05-15 18:26:40.769(Timestamp)
+2019-05-15 18:27:03,918 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 1132 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 18:27:03,924 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 18:27:07,433 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.095 seconds (JVM running for 4.743)
+2019-05-15 18:27:07,436 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 18:27:07,436 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 18:27:10,456 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM zzz z WHERE z.st >=? AND z.en<=? 
+2019-05-15 18:27:10,476 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1970-02-03 12:00:00.0(Timestamp), 1970-08-03 12:00:00.0(Timestamp)
+2019-05-15 18:27:10,488 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-15 18:27:10,491 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into zzz ( qwe, timsta, asd, zxc, st, fgh, en ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2019-05-15 18:27:10,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2213(String), 1999-03-03 12:23:33.0(Timestamp), 2(Integer), 2019-05-15(Date), 2019-05-15 18:27:10.49(Timestamp), 2.0(Double), 2019-05-15 18:27:10.49(Timestamp)
+2019-05-15 18:27:10,497 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-05-15 18:29:06,744 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 4144 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 18:29:06,749 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 18:29:10,409 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.214 seconds (JVM running for 4.799)
+2019-05-15 18:29:10,412 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 18:29:10,413 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 18:29:12,332 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM zzz z WHERE z.st >=? AND z.en<=? 
+2019-05-15 18:29:12,350 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1970-02-03 12:00:00.0(Timestamp), 1970-08-03 12:00:00.0(Timestamp)
+2019-05-15 18:29:12,362 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-15 18:29:12,366 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into zzz ( qwe, timsta, asd, zxc, st, fgh, en ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2019-05-15 18:29:12,369 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21213(String), 1999-03-03 12:23:33.0(Timestamp), 12(Integer), 1999-03-03(Date), 1999-03-03 12:23:33.0(Timestamp), 22.0(Double), 1999-03-03 12:23:33.0(Timestamp)
+2019-05-15 18:29:12,370 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

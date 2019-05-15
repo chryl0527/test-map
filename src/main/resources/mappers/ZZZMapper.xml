@@ -3,6 +3,7 @@
 <mapper namespace="com.sumsoon.zzz.mapper.ZZZMapper">
   <resultMap id="BaseResultMap" type="com.sumsoon.zzz.po.ZZZ">
     <id column="qwe" jdbcType="VARCHAR" property="qwe" />
+    <result column="timsta" jdbcType="TIMESTAMP" property="timsta" />
     <result column="asd" jdbcType="INTEGER" property="asd" />
     <result column="zxc" jdbcType="DATE" property="zxc" />
     <result column="st" jdbcType="TIMESTAMP" property="st" />
@@ -68,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    qwe, asd, zxc, st, fgh, en
+    qwe, timsta, asd, zxc, st, fgh, en
   </sql>
   <select id="selectByExample" parameterType="com.sumsoon.zzz.po.ZZZExample" resultMap="BaseResultMap">
     select
@@ -101,16 +102,21 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.sumsoon.zzz.po.ZZZ">
-    insert into zzz (qwe, asd, zxc, st, 
-      fgh, en)
-    values (#{qwe,jdbcType=VARCHAR}, #{asd,jdbcType=INTEGER}, #{zxc,jdbcType=DATE}, #{st,jdbcType=TIMESTAMP}, 
-      #{fgh,jdbcType=DOUBLE}, #{en,jdbcType=TIMESTAMP})
+    insert into zzz (qwe, timsta, asd, 
+      zxc, st, fgh, en
+      )
+    values (#{qwe,jdbcType=VARCHAR}, #{timsta,jdbcType=TIMESTAMP}, #{asd,jdbcType=INTEGER}, 
+      #{zxc,jdbcType=DATE}, #{st,jdbcType=TIMESTAMP}, #{fgh,jdbcType=DOUBLE}, #{en,jdbcType=TIMESTAMP}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.sumsoon.zzz.po.ZZZ">
     insert into zzz
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="qwe != null">
         qwe,
+      </if>
+      <if test="timsta != null">
+        timsta,
       </if>
       <if test="asd != null">
         asd,
@@ -131,6 +137,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="qwe != null">
         #{qwe,jdbcType=VARCHAR},
+      </if>
+      <if test="timsta != null">
+        #{timsta,jdbcType=TIMESTAMP},
       </if>
       <if test="asd != null">
         #{asd,jdbcType=INTEGER},
@@ -161,6 +170,9 @@
       <if test="record.qwe != null">
         qwe = #{record.qwe,jdbcType=VARCHAR},
       </if>
+      <if test="record.timsta != null">
+        timsta = #{record.timsta,jdbcType=TIMESTAMP},
+      </if>
       <if test="record.asd != null">
         asd = #{record.asd,jdbcType=INTEGER},
       </if>
@@ -184,6 +196,7 @@
   <update id="updateByExample" parameterType="map">
     update zzz
     set qwe = #{record.qwe,jdbcType=VARCHAR},
+      timsta = #{record.timsta,jdbcType=TIMESTAMP},
       asd = #{record.asd,jdbcType=INTEGER},
       zxc = #{record.zxc,jdbcType=DATE},
       st = #{record.st,jdbcType=TIMESTAMP},
@@ -196,6 +209,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.sumsoon.zzz.po.ZZZ">
     update zzz
     <set>
+      <if test="timsta != null">
+        timsta = #{timsta,jdbcType=TIMESTAMP},
+      </if>
       <if test="asd != null">
         asd = #{asd,jdbcType=INTEGER},
       </if>
@@ -216,7 +232,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.sumsoon.zzz.po.ZZZ">
     update zzz
-    set asd = #{asd,jdbcType=INTEGER},
+    set timsta = #{timsta,jdbcType=TIMESTAMP},
+      asd = #{asd,jdbcType=INTEGER},
       zxc = #{zxc,jdbcType=DATE},
       st = #{st,jdbcType=TIMESTAMP},
       fgh = #{fgh,jdbcType=DOUBLE},

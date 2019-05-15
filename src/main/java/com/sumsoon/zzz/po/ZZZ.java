@@ -6,6 +6,8 @@ import java.util.Date;
 public class ZZZ implements Serializable {
     private String qwe;
 
+    private Date timsta;
+
     private Integer asd;
 
     private Date zxc;
@@ -16,13 +18,12 @@ public class ZZZ implements Serializable {
 
     private Date en;
 
-    private static final long serialVersionUID = 1L;
-
     public ZZZ() {
     }
 
-    public ZZZ(String qwe, Integer asd, Date zxc, Date st, Double fgh, Date en) {
+    public ZZZ(String qwe, Date timsta, Integer asd, Date zxc, Date st, Double fgh, Date en) {
         this.qwe = qwe;
+        this.timsta = timsta;
         this.asd = asd;
         this.zxc = zxc;
         this.st = st;
@@ -30,12 +31,22 @@ public class ZZZ implements Serializable {
         this.en = en;
     }
 
+    private static final long serialVersionUID = 1L;
+
     public String getQwe() {
         return qwe;
     }
 
     public void setQwe(String qwe) {
         this.qwe = qwe == null ? null : qwe.trim();
+    }
+
+    public Date getTimsta() {
+        return timsta;
+    }
+
+    public void setTimsta(Date timsta) {
+        this.timsta = timsta;
     }
 
     public Integer getAsd() {
@@ -85,6 +96,7 @@ public class ZZZ implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", qwe=").append(qwe);
+        sb.append(", timsta=").append(timsta);
         sb.append(", asd=").append(asd);
         sb.append(", zxc=").append(zxc);
         sb.append(", st=").append(st);

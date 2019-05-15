@@ -327,4 +327,12 @@ public class TestCont {
 //        System.out.println(parse);
 
     }
+
+    @GetMapping(value = {"/st18"})
+    public Object show18(){
+//        return othMapper.query8(null,null,"12");
+//        return othMapper.query8(2,2,"1");
+        return othMapper.query8(null,2,"12");
+//        return othMapper.query8(2,null,"12");
+    }
 }

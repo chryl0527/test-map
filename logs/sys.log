@@ -338,3 +338,187 @@
 2019-05-15 13:52:26,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx -- WHERE 别直接写where WHERE maa LIKE CONCAT(CONCAT('%', ?,'%')) limit 2,3 
 2019-05-15 13:52:26,395 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
 2019-05-15 13:52:26,413 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-15 14:37:59,350 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 12116 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:37:59,356 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:38:40,686 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 11120 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:38:40,706 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:38:48,568 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 1648 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:38:48,596 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:38:51,909 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.689 seconds (JVM running for 5.726)
+2019-05-15 14:38:51,912 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:38:51,912 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:38:54,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? ? 
+2019-05-15 14:38:54,226 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer), 3(Integer)
+2019-05-15 14:40:27,825 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 11860 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:40:27,831 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:40:31,518 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.507 seconds (JVM running for 5.381)
+2019-05-15 14:40:31,521 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:40:31,521 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:40:34,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? ,? 
+2019-05-15 14:40:34,755 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer), 3(Integer)
+2019-05-15 14:40:34,801 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-15 14:41:26,087 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 11600 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:41:26,096 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:41:30,243 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.882 seconds (JVM running for 5.627)
+2019-05-15 14:41:30,246 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:41:30,247 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:41:31,919 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') 
+2019-05-15 14:41:31,938 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-15 14:41:31,954 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-15 14:42:55,607 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 11852 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:42:55,630 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:43:00,031 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.132 seconds (JVM running for 6.219)
+2019-05-15 14:43:00,035 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:43:00,035 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:43:02,542 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') 
+2019-05-15 14:43:02,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-15 14:43:02,578 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-15 14:44:43,242 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8204 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:44:43,252 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:44:48,098 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.647 seconds (JVM running for 6.461)
+2019-05-15 14:44:48,101 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:44:48,101 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:44:48,811 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:44:48,830 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:44:48,844 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:46:52,883 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 6988 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:46:52,890 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:46:56,915 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.732 seconds (JVM running for 5.421)
+2019-05-15 14:46:56,918 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:46:56,919 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:46:59,924 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') ,? 
+2019-05-15 14:46:59,945 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:47:52,763 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 13180 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:47:52,768 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:47:56,842 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.935 seconds (JVM running for 5.884)
+2019-05-15 14:47:56,846 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:47:56,846 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:47:58,780 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') ? 
+2019-05-15 14:47:58,798 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:48:56,992 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 12784 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:48:56,998 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:49:01,127 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.501 seconds (JVM running for 6.555)
+2019-05-15 14:49:01,129 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:49:01,130 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:49:03,052 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:49:03,072 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:49:03,087 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:49:38,871 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8760 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:49:38,879 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:49:42,955 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.897 seconds (JVM running for 5.663)
+2019-05-15 14:49:42,958 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:49:42,958 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:49:45,105 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:49:45,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:49:45,137 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:49:59,172 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 1864 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:49:59,177 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:50:03,413 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.148 seconds (JVM running for 6.033)
+2019-05-15 14:50:03,416 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:50:03,416 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:50:06,003 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ?, 
+2019-05-15 14:50:06,022 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:51:13,232 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8440 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:51:13,238 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:51:17,442 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.913 seconds (JVM running for 5.667)
+2019-05-15 14:51:17,446 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:51:17,446 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:51:18,932 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') 
+2019-05-15 14:51:18,952 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-15 14:51:18,970 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-15 14:51:29,886 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 2040 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:51:29,894 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:51:34,758 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.569 seconds (JVM running for 6.361)
+2019-05-15 14:51:34,763 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:51:34,763 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:51:37,222 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ?, , ? 
+2019-05-15 14:51:37,245 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2(Integer), 2(Integer)
+2019-05-15 14:52:12,154 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8724 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:52:12,160 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:52:16,400 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.903 seconds (JVM running for 5.605)
+2019-05-15 14:52:16,404 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:52:16,404 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:52:20,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') 
+2019-05-15 14:52:20,073 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-15 14:52:20,086 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-15 14:52:32,552 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 13212 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:52:32,561 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:52:36,992 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.166 seconds (JVM running for 5.942)
+2019-05-15 14:52:36,996 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:52:36,996 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:52:40,615 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? , ? 
+2019-05-15 14:52:40,635 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2(Integer), 2(Integer)
+2019-05-15 14:52:40,650 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:53:06,446 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 12212 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:53:06,451 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:53:10,441 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.943 seconds (JVM running for 5.921)
+2019-05-15 14:53:10,444 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:53:10,445 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:53:13,402 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:53:13,422 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:53:13,437 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:53:19,503 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8440 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:53:19,513 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:53:30,060 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10812 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:53:30,066 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:53:34,335 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.008 seconds (JVM running for 5.768)
+2019-05-15 14:53:34,340 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:53:34,341 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:53:37,130 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:53:37,150 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:53:37,165 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:55:14,917 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 2548 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:55:14,923 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:55:18,967 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.772 seconds (JVM running for 5.489)
+2019-05-15 14:55:18,971 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:55:18,972 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:55:23,881 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:55:23,900 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:55:23,914 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:55:42,879 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 5268 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:55:42,886 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:55:46,500 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.45 seconds (JVM running for 5.234)
+2019-05-15 14:55:46,503 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:55:46,503 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:55:48,282 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') 
+2019-05-15 14:55:48,305 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String)
+2019-05-15 14:55:48,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-05-15 14:56:01,858 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 8820 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:56:01,866 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:56:06,316 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.248 seconds (JVM running for 5.999)
+2019-05-15 14:56:06,319 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:56:06,319 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:56:07,737 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? , ? 
+2019-05-15 14:56:07,757 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2(Integer), 2(Integer)
+2019-05-15 14:56:07,773 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:56:29,270 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 10848 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:56:29,277 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:56:33,499 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.957 seconds (JVM running for 5.703)
+2019-05-15 14:56:33,503 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:56:33,504 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:56:35,571 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:56:35,592 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:56:35,607 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 14:56:50,655 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 7576 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 14:56:50,661 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 14:56:54,997 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.075 seconds (JVM running for 5.849)
+2019-05-15 14:56:55,000 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 14:56:55,001 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 14:56:56,906 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 14:56:56,926 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 14:56:56,939 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-15 15:08:18,010 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 12128 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 15:08:18,015 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 15:08:22,213 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 4.921 seconds (JVM running for 5.732)
+2019-05-15 15:08:22,217 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 15:08:22,217 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 15:08:34,414 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT limit ? 
+2019-05-15 15:08:34,434 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 15:12:50,973 INFO (StartupInfoLogger.java:50)- Starting TestMapApplication on PC201903011456 with PID 12112 (D:\develop\workSpaces\idea_project\test-map\target\classes started by Administrator in D:\develop\workSpaces\idea_project\test-map)
+2019-05-15 15:12:50,979 INFO (SpringApplication.java:652)- No active profile set, falling back to default profiles: default
+2019-05-15 15:12:55,580 INFO (StartupInfoLogger.java:59)- Started TestMapApplication in 5.667 seconds (JVM running for 6.726)
+2019-05-15 15:12:55,585 INFO (TestMapApplication.java:19)- =========================
+2019-05-15 15:12:55,586 ERROR (TestMapApplication.java:21)- 日志测试 log error
+2019-05-15 15:12:59,122 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT maa,sadf,wrsa,sfds FROM xxx x WHERE x.maa LIKE CONCAT(?,'%') LIMIT ? 
+2019-05-15 15:12:59,165 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(String), 2(Integer)
+2019-05-15 15:12:59,185 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

@@ -145,4 +145,74 @@
             </if>
         </where>
     </select>
+
+    <!-- <![CDATA[]]> 使用cdata的做法 -->
+    <!--<select id="getList" resultMap="AccountMap">-->
+    <!--SELECT  * FROM t_account  t-->
+    <!--<if test="username !=null and username !=''">-->
+    <!--<![CDATA[-->
+    <!--WHERE  t.username LIKE concat('%',#{username},'%')-->
+    <!--]]>-->
+    <!--</if>-->
+    <!--ORDER BY t.register_time DESC-->
+    <!--<if test="startIndex != null">-->
+    <!--LIMIT #{startIndex}-->
+    <!--</if>-->
+    <!--<if test="skip != null">-->
+    <!--,#{skip}-->
+    <!--</if>-->
+    <!--</select>-->
+    <select id="query8" resultMap="BaseResultMap">
+        SELECT
+        <include refid="col"/>
+        FROM xxx x
+        <where>
+            <if test="maa!=null">
+                x.maa
+                LIKE
+                CONCAT(#{maa},'%')
+            </if>
+            <if test="startIndex != null or skip != null">
+                LIMIT
+                <if test="startIndex != null">
+                    #{startIndex}
+                </if>
+                <if test="startIndex != null and skip != null">
+                    ,
+                </if>
+                <if test="skip != null">
+                    #{skip}
+                </if>
+            </if>
+        </where>
+    </select>
+
+    <!-- trim:未成功 -->
+    <!-- <select id="query9" resultMap="BaseResultMap">
+         SELECT
+         <include refid="col"/>
+         FROM xxx x
+         <where>
+             <if test="maa!=null">
+                 x.maa
+                 LIKE
+                 CONCAT(#{maa},'%')
+             </if>
+
+             <trim prefix="limit" prefixOverrides=",">
+                 <if test="startIndex != null or skip != null">
+                     LIMIT
+                     <if test="startIndex != null">
+                         #{startIndex}
+                     </if>
+                     <if test="startIndex != null and skip != null">
+                         ,
+                     </if>
+                     <if test="skip != null">
+                         #{skip}
+                     </if>
+                 </if>
+             </trim>
+         </where>
+     </select>-->
 </mapper>

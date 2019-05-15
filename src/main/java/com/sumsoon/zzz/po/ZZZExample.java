@@ -322,63 +322,63 @@ public class ZZZExample {
             return (Criteria) this;
         }
 
-        public Criteria andRtyIsNull() {
-            addCriterion("rty is null");
+        public Criteria andStIsNull() {
+            addCriterion("st is null");
             return (Criteria) this;
         }
 
-        public Criteria andRtyIsNotNull() {
-            addCriterion("rty is not null");
+        public Criteria andStIsNotNull() {
+            addCriterion("st is not null");
             return (Criteria) this;
         }
 
-        public Criteria andRtyEqualTo(Date value) {
-            addCriterion("rty =", value, "rty");
+        public Criteria andStEqualTo(Date value) {
+            addCriterion("st =", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyNotEqualTo(Date value) {
-            addCriterion("rty <>", value, "rty");
+        public Criteria andStNotEqualTo(Date value) {
+            addCriterion("st <>", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyGreaterThan(Date value) {
-            addCriterion("rty >", value, "rty");
+        public Criteria andStGreaterThan(Date value) {
+            addCriterion("st >", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyGreaterThanOrEqualTo(Date value) {
-            addCriterion("rty >=", value, "rty");
+        public Criteria andStGreaterThanOrEqualTo(Date value) {
+            addCriterion("st >=", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyLessThan(Date value) {
-            addCriterion("rty <", value, "rty");
+        public Criteria andStLessThan(Date value) {
+            addCriterion("st <", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyLessThanOrEqualTo(Date value) {
-            addCriterion("rty <=", value, "rty");
+        public Criteria andStLessThanOrEqualTo(Date value) {
+            addCriterion("st <=", value, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyIn(List<Date> values) {
-            addCriterion("rty in", values, "rty");
+        public Criteria andStIn(List<Date> values) {
+            addCriterion("st in", values, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyNotIn(List<Date> values) {
-            addCriterion("rty not in", values, "rty");
+        public Criteria andStNotIn(List<Date> values) {
+            addCriterion("st not in", values, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyBetween(Date value1, Date value2) {
-            addCriterion("rty between", value1, value2, "rty");
+        public Criteria andStBetween(Date value1, Date value2) {
+            addCriterion("st between", value1, value2, "st");
             return (Criteria) this;
         }
 
-        public Criteria andRtyNotBetween(Date value1, Date value2) {
-            addCriterion("rty not between", value1, value2, "rty");
+        public Criteria andStNotBetween(Date value1, Date value2) {
+            addCriterion("st not between", value1, value2, "st");
             return (Criteria) this;
         }
 
@@ -439,6 +439,66 @@ public class ZZZExample {
 
         public Criteria andFghNotBetween(Double value1, Double value2) {
             addCriterion("fgh not between", value1, value2, "fgh");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnIsNull() {
+            addCriterion("en is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnIsNotNull() {
+            addCriterion("en is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnEqualTo(Date value) {
+            addCriterion("en =", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnNotEqualTo(Date value) {
+            addCriterion("en <>", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnGreaterThan(Date value) {
+            addCriterion("en >", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnGreaterThanOrEqualTo(Date value) {
+            addCriterion("en >=", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnLessThan(Date value) {
+            addCriterion("en <", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnLessThanOrEqualTo(Date value) {
+            addCriterion("en <=", value, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnIn(List<Date> values) {
+            addCriterion("en in", values, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnNotIn(List<Date> values) {
+            addCriterion("en not in", values, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnBetween(Date value1, Date value2) {
+            addCriterion("en between", value1, value2, "en");
+            return (Criteria) this;
+        }
+
+        public Criteria andEnNotBetween(Date value1, Date value2) {
+            addCriterion("en not between", value1, value2, "en");
             return (Criteria) this;
         }
     }

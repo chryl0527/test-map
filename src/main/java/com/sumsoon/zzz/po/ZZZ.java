@@ -10,22 +10,13 @@ public class ZZZ implements Serializable {
 
     private Date zxc;
 
-    private Date rty;
+    private Date st;
 
     private Double fgh;
 
+    private Date en;
+
     private static final long serialVersionUID = 1L;
-
-    public ZZZ() {
-    }
-
-    public ZZZ(String qwe, Integer asd, Date zxc, Date rty, Double fgh) {
-        this.qwe = qwe;
-        this.asd = asd;
-        this.zxc = zxc;
-        this.rty = rty;
-        this.fgh = fgh;
-    }
 
     public String getQwe() {
         return qwe;
@@ -51,12 +42,12 @@ public class ZZZ implements Serializable {
         this.zxc = zxc;
     }
 
-    public Date getRty() {
-        return rty;
+    public Date getSt() {
+        return st;
     }
 
-    public void setRty(Date rty) {
-        this.rty = rty;
+    public void setSt(Date st) {
+        this.st = st;
     }
 
     public Double getFgh() {
@@ -65,6 +56,14 @@ public class ZZZ implements Serializable {
 
     public void setFgh(Double fgh) {
         this.fgh = fgh;
+    }
+
+    public Date getEn() {
+        return en;
+    }
+
+    public void setEn(Date en) {
+        this.en = en;
     }
 
     @Override
@@ -76,8 +75,9 @@ public class ZZZ implements Serializable {
         sb.append(", qwe=").append(qwe);
         sb.append(", asd=").append(asd);
         sb.append(", zxc=").append(zxc);
-        sb.append(", rty=").append(rty);
+        sb.append(", st=").append(st);
         sb.append(", fgh=").append(fgh);
+        sb.append(", en=").append(en);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

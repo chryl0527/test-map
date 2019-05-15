@@ -29,4 +29,6 @@ public interface OthMapper {
 
     List<Oth> query7(@Param("maa") String ma);
 
+    List<Oth> query8(@Param("startIndex") Integer startIndex, @Param("skip") Integer skip, @Param("maa") String ma);
+
 }

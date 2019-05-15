@@ -5,8 +5,9 @@
     <id column="qwe" jdbcType="VARCHAR" property="qwe" />
     <result column="asd" jdbcType="INTEGER" property="asd" />
     <result column="zxc" jdbcType="DATE" property="zxc" />
-    <result column="rty" jdbcType="TIMESTAMP" property="rty" />
+    <result column="st" jdbcType="TIMESTAMP" property="st" />
     <result column="fgh" jdbcType="DOUBLE" property="fgh" />
+    <result column="en" jdbcType="TIMESTAMP" property="en" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -67,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    qwe, asd, zxc, rty, fgh
+    qwe, asd, zxc, st, fgh, en
   </sql>
   <select id="selectByExample" parameterType="com.sumsoon.zzz.po.ZZZExample" resultMap="BaseResultMap">
     select
@@ -100,10 +101,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.sumsoon.zzz.po.ZZZ">
-    insert into zzz (qwe, asd, zxc, rty, 
-      fgh)
-    values (#{qwe,jdbcType=VARCHAR}, #{asd,jdbcType=INTEGER}, #{zxc,jdbcType=DATE}, #{rty,jdbcType=TIMESTAMP}, 
-      #{fgh,jdbcType=DOUBLE})
+    insert into zzz (qwe, asd, zxc, st, 
+      fgh, en)
+    values (#{qwe,jdbcType=VARCHAR}, #{asd,jdbcType=INTEGER}, #{zxc,jdbcType=DATE}, #{st,jdbcType=TIMESTAMP}, 
+      #{fgh,jdbcType=DOUBLE}, #{en,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.sumsoon.zzz.po.ZZZ">
     insert into zzz
@@ -117,11 +118,14 @@
       <if test="zxc != null">
         zxc,
       </if>
-      <if test="rty != null">
-        rty,
+      <if test="st != null">
+        st,
       </if>
       <if test="fgh != null">
         fgh,
+      </if>
+      <if test="en != null">
+        en,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -134,11 +138,14 @@
       <if test="zxc != null">
         #{zxc,jdbcType=DATE},
       </if>
-      <if test="rty != null">
-        #{rty,jdbcType=TIMESTAMP},
+      <if test="st != null">
+        #{st,jdbcType=TIMESTAMP},
       </if>
       <if test="fgh != null">
         #{fgh,jdbcType=DOUBLE},
+      </if>
+      <if test="en != null">
+        #{en,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -160,11 +167,14 @@
       <if test="record.zxc != null">
         zxc = #{record.zxc,jdbcType=DATE},
       </if>
-      <if test="record.rty != null">
-        rty = #{record.rty,jdbcType=TIMESTAMP},
+      <if test="record.st != null">
+        st = #{record.st,jdbcType=TIMESTAMP},
       </if>
       <if test="record.fgh != null">
         fgh = #{record.fgh,jdbcType=DOUBLE},
+      </if>
+      <if test="record.en != null">
+        en = #{record.en,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -176,8 +186,9 @@
     set qwe = #{record.qwe,jdbcType=VARCHAR},
       asd = #{record.asd,jdbcType=INTEGER},
       zxc = #{record.zxc,jdbcType=DATE},
-      rty = #{record.rty,jdbcType=TIMESTAMP},
-      fgh = #{record.fgh,jdbcType=DOUBLE}
+      st = #{record.st,jdbcType=TIMESTAMP},
+      fgh = #{record.fgh,jdbcType=DOUBLE},
+      en = #{record.en,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -191,11 +202,14 @@
       <if test="zxc != null">
         zxc = #{zxc,jdbcType=DATE},
       </if>
-      <if test="rty != null">
-        rty = #{rty,jdbcType=TIMESTAMP},
+      <if test="st != null">
+        st = #{st,jdbcType=TIMESTAMP},
       </if>
       <if test="fgh != null">
         fgh = #{fgh,jdbcType=DOUBLE},
+      </if>
+      <if test="en != null">
+        en = #{en,jdbcType=TIMESTAMP},
       </if>
     </set>
     where qwe = #{qwe,jdbcType=VARCHAR}
@@ -204,8 +218,9 @@
     update zzz
     set asd = #{asd,jdbcType=INTEGER},
       zxc = #{zxc,jdbcType=DATE},
-      rty = #{rty,jdbcType=TIMESTAMP},
-      fgh = #{fgh,jdbcType=DOUBLE}
+      st = #{st,jdbcType=TIMESTAMP},
+      fgh = #{fgh,jdbcType=DOUBLE},
+      en = #{en,jdbcType=TIMESTAMP}
     where qwe = #{qwe,jdbcType=VARCHAR}
   </update>
 </mapper>

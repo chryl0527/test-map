@@ -8,7 +8,9 @@ import com.sumsoon.zzz.po.XXX;
 import com.sumsoon.zzz.po.XXXExample;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -286,4 +288,16 @@ public class TestCont {
 
     }
 
+    //restFUL:同时处理两个请求,{ac}不是必需的,(有id和没id)
+    @RequestMapping(value = {"/st17/{maa}/{ac}", "/st17/{maa}"}, method = RequestMethod.GET)//@RequestMapping是可以处理多个url的
+    public Object show17(@PathVariable(value = "maa") String ma,
+                         @PathVariable(value = "ac", required = false) String a) {
+        List<Map<String, Object>> maps = null;
+        if (a != null) {
+            System.out.println(" select  by primaryKey");
+        } else {
+            maps = othMapper.query6(ma);
+        }
+        return maps;
+    }
 }

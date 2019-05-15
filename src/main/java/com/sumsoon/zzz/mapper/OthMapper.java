@@ -1,5 +1,6 @@
 package com.sumsoon.zzz.mapper;
 
+import com.sumsoon.zzz.po.Oth;
 import com.sumsoon.zzz.po.XXX;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,5 +26,7 @@ public interface OthMapper {
     List<Map<String, Object>> query55(@Param("maa") String ma);
 
     List<Map<String, Object>> query6(@Param("maa") String ma);
+
+    List<Oth> query7(@Param("maa") String ma);
 
 }

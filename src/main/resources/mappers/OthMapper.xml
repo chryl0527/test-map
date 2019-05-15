@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sumsoon.zzz.mapper.OthMapper">
-
+    <resultMap id="BaseResultMap" type="com.sumsoon.zzz.po.Oth">
+        <id column="maa" jdbcType="VARCHAR" property="maaTest"/>
+        <result column="sadf" jdbcType="VARCHAR" property="sadfTest"/>
+        <result column="wrsa" jdbcType="VARCHAR" property="wrsaTest"/>
+        <result column="sfds" jdbcType="VARCHAR" property="sfdsTest"/>
+    </resultMap>
     <sql id="col">
         maa,sadf,wrsa,sfds
     </sql>
@@ -105,7 +110,7 @@
                 maa
                 LIKE
                 concat('%',#{maa},'%')
---                 concat(#{maa},'%')
+                -- concat(#{maa},'%')
             </if>
         </where>
 
@@ -127,5 +132,18 @@
         </where>
 
         limit 2,3
+    </select>
+    <!-- resultMap -->
+    <select id="query7" resultMap="BaseResultMap" parameterType="string">
+        SELECT
+        <include refid="col"/>
+        FROM xxx
+        <where>
+            <if test="maa!=null">
+                maa
+                LIKE
+                CONCAT(#{maa},'%')
+            </if>
+        </where>
     </select>
 </mapper>

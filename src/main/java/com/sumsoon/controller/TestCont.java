@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Callable;
 
 /**
  * Created By Chr on 2019/5/13.
@@ -209,5 +210,27 @@ public class TestCont {
         System.out.println(xxObj);
         return xxObj;
     }
+
+    //测试异步返回
+    @RequestMapping("/st13")
+    public Callable<XXObj> show13() {
+
+        return () -> {
+            List<Map<String, Object>> maps = othMapper.query6("12");
+            XXObj xxObj = new XXObj();
+            xxObj.setData(maps);
+            xxObj.setStatus("aaxf");
+            System.out.println(xxObj);
+            return xxObj;
+        };
+    }
+
+    //测试resultMap
+    @RequestMapping("/st14")
+    public Object show14() {
+        return othMapper.query7("12");
+
+    }
+
 
 }

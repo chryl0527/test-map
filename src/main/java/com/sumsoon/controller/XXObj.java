@@ -11,6 +11,14 @@ public class XXObj {
     public String status;
     public Object data;
 
+    public XXObj() {
+    }
+
+    public XXObj(String status, Object data) {
+        this.status = status;
+        this.data = data;
+    }
+
     public String getStatus() {
         return status;
     }

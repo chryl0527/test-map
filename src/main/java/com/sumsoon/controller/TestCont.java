@@ -2,16 +2,14 @@ package com.sumsoon.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.sumsoon.zzz.mapper.OthMapper;
 import com.sumsoon.zzz.mapper.XXXMapper;
 import com.sumsoon.zzz.po.XXX;
 import com.sumsoon.zzz.po.XXXExample;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -299,5 +297,34 @@ public class TestCont {
             maps = othMapper.query6(ma);
         }
         return maps;
+    }
+
+    public static void main(String args[]) {
+        Map<String, String> map = new HashMap<>();
+        map.put("maa", "12");
+        map.put("3", "12");
+        map.put("ma4a", "12");
+        map.put("ma2a", "12");
+        map.put("m1aa", "12");
+        Map<String, String> map2 = new HashMap<>();
+        map2.put("1", "a");
+        map2.put("2", "b");
+        map2.put("3", "c");
+        map2.put("4", "d");
+        map2.put("5", "e");
+        String s = JSON.toJSONString(map.toString());
+        System.out.println(s);
+        JSONObject jsonObject=new JSONObject();
+        //put能结合在一起,有key,
+//        jsonObject.put("map-1",map);
+//        jsonObject.put("map-2",map2);
+        //putAll也能,无key,完全融合
+        jsonObject.putAll(map);
+        jsonObject.putAll(map2);
+        System.out.println(jsonObject.toString());
+
+//        Object parse = JSONObject.parse(map.toString());
+//        System.out.println(parse);
+
     }
 }

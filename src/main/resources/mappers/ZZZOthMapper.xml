@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sumsoon.zzz.mapper.ZZZOthMapper">
+
+
+    <!--
+        &gt >
+        &lt <
+     -->
+    <select id="query01" resultType="com.sumsoon.zzz.po.ZZZ">
+        SELECT * FROM zzz z
+        <where>
+            <if test="st!=null">
+                z.st &gt;=#{st}
+            </if>
+            <if test="en!=null">
+                AND z.en&lt;=#{en}
+            </if>
+        </where>
+    </select>
+</mapper>

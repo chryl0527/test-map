@@ -130,7 +130,6 @@
                 CONCAT(CONCAT('%', #{maa},'%'))
             </if>
         </where>
-
         limit 2,3
     </select>
     <!-- resultMap -->

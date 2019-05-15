@@ -2,7 +2,6 @@ package com.sumsoon.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import com.sumsoon.zzz.mapper.OthMapper;
 import com.sumsoon.zzz.mapper.XXXMapper;
 import com.sumsoon.zzz.po.XXX;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.Callable;
+import java.util.concurrent.*;
 
 /**
  * Created By Chr on 2019/5/13.
@@ -125,6 +124,8 @@ public class TestCont {
 
     @RequestMapping("/st8")
     public Object show8() {
+
+
         List<Map<String, Object>> maps = othMapper.query6("12");
 
         return maps;
@@ -232,5 +233,57 @@ public class TestCont {
 
     }
 
+
+    //##################################模拟service层#####################################//
+    ExecutorService executorService = Executors.newFixedThreadPool(4);
+
+
+    @RequestMapping("/st15")
+    public Object show15() throws ExecutionException, InterruptedException {
+
+        long startTime = System.currentTimeMillis();
+        System.out.println("当前主线程为：" + Thread.currentThread() + " --->主线程开始时间：" + System.currentTimeMillis());
+
+        Callable<List<Map<String, Object>>> callable = () -> {
+            List<Map<String, Object>> maps = othMapper.query6("12");
+            List<Map<String, Object>> maps2 = othMapper.query6("12");
+            List<Map<String, Object>> maps3 = othMapper.query6("12");
+            List<Map<String, Object>> maps4 = othMapper.query6("12");
+            List<Map<String, Object>> maps5 = othMapper.query6("12");
+
+            System.out.println(maps);
+            return maps;
+        };
+
+        FutureTask futureTask = new FutureTask(callable);
+        Future<?> future = executorService.submit(futureTask);
+        System.err.println(futureTask.get());
+        if (future.isDone()) {
+
+            System.err.println("done");
+            System.out.println("当前主线程为：" + Thread.currentThread() + " --->接口结束时间：" + System.currentTimeMillis());
+            System.out.println("接口执行时间：" + (System.currentTimeMillis() - startTime));
+        }
+        return futureTask.get();
+
+    }
+
+    @RequestMapping("/st16")
+    public Object show16() {
+        long startTime = System.currentTimeMillis();
+
+        System.out.println("当前主线程为：" + Thread.currentThread() + " --->主线程开始时间：" + System.currentTimeMillis());
+
+        List<Map<String, Object>> maps = othMapper.query6("12");
+        List<Map<String, Object>> maps2 = othMapper.query6("12");
+        List<Map<String, Object>> maps3 = othMapper.query6("12");
+        List<Map<String, Object>> maps4 = othMapper.query6("12");
+        List<Map<String, Object>> maps5 = othMapper.query6("12");
+
+        System.out.println("当前主线程为：" + Thread.currentThread() + " --->接口结束时间：" + System.currentTimeMillis());
+        System.out.println("接口执行时间：" + (System.currentTimeMillis() - startTime));
+        return maps;
+
+    }
 
 }

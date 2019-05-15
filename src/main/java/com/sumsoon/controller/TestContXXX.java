@@ -19,6 +19,8 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 /**
+ * 测试一下mybatis基本操作
+ * <p>
  * Created By Chr on 2019/5/13.
  */
 
@@ -314,7 +316,7 @@ public class TestContXXX {
         map2.put("5", "e");
         String s = JSON.toJSONString(map.toString());
         System.out.println(s);
-        JSONObject jsonObject=new JSONObject();
+        JSONObject jsonObject = new JSONObject();
         //put能结合在一起,有key,
 //        jsonObject.put("map-1",map);
 //        jsonObject.put("map-2",map2);
@@ -329,10 +331,10 @@ public class TestContXXX {
     }
 
     @GetMapping(value = {"/st18"})
-    public Object show18(){
+    public Object show18() {
 //        return othMapper.query8(null,null,"12");
 //        return othMapper.query8(2,2,"1");
-        return othMapper.query8(null,2,"12");
+        return othMapper.query8(null, 2, "12");
 //        return othMapper.query8(2,null,"12");
     }
 }

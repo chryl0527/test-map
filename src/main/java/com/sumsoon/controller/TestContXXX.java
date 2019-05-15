@@ -25,7 +25,7 @@ import java.util.concurrent.*;
 @Slf4j
 @RestController
 @RequestMapping(value = "/te")
-public class TestCont {
+public class TestContXXX {
 
 
     @Autowired

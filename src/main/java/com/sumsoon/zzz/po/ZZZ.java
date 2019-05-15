@@ -18,6 +18,18 @@ public class ZZZ implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public ZZZ() {
+    }
+
+    public ZZZ(String qwe, Integer asd, Date zxc, Date st, Double fgh, Date en) {
+        this.qwe = qwe;
+        this.asd = asd;
+        this.zxc = zxc;
+        this.st = st;
+        this.fgh = fgh;
+        this.en = en;
+    }
+
     public String getQwe() {
         return qwe;
     }

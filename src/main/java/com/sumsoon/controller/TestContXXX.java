@@ -77,7 +77,6 @@ public class TestContXXX {
 
         List<Map<String, Object>> maps = othMapper.query1("12");
         return maps;
-
     }
 
     @RequestMapping("/st4")
@@ -88,7 +87,6 @@ public class TestContXXX {
 
         List<Map<String, Object>> maps = othMapper.query2(map);
         return maps;
-
     }
 
     @RequestMapping("/st5")
@@ -97,7 +95,6 @@ public class TestContXXX {
         List<Map<String, Object>> maps = othMapper.query3(new XXX("12", "", "", ""));
 
         return maps;
-
     }
 
     @RequestMapping("/st6")
@@ -113,7 +110,6 @@ public class TestContXXX {
         List<Map<String, Object>> maps = othMapper.query5("12");
 
         return maps;
-
     }
 
     @RequestMapping("/st77")
@@ -126,12 +122,9 @@ public class TestContXXX {
 
     @RequestMapping("/st8")
     public Object show8() {
-
-
         List<Map<String, Object>> maps = othMapper.query6("12");
 
         return maps;
-
     }
 
     //======================================
@@ -337,4 +330,11 @@ public class TestContXXX {
         return othMapper.query8(null, 2, "12");
 //        return othMapper.query8(2,null,"12");
     }
+
+    @RequestMapping("/st19")
+    public Object show19() {
+        List<Map<String, Object>> maps = othMapper.query6("12");
+        return maps;
+    }
+
 }

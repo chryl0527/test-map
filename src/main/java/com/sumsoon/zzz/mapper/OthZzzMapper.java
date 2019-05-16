@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created By Chr on 2019/5/15.
  */
-public interface ZZZOthMapper {
+public interface OthZzzMapper {
 
-    List<ZZZ> query01(@Param("st") Date st,@Param("en") Date en);
+    List<ZZZ> query01(@Param("st") Date st, @Param("en") Date en);
 }

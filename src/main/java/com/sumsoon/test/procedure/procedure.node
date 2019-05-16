@@ -1,0 +1,25 @@
+create or replace procedure p_querySal_out(c_empno_in IN emp.empno%TYPE,
+                                           c_sal_out  OUT emp.sal%TYPE) as
+  -- 带参的存储过程：查询并打印某个员工（如7788）的姓名和薪水：要求，调用的时候传入员工编号，薪水作为返回值输出，程序调用使用
+  -- 输入参数：c_empno_in IN emp.empno%TYPE   带一个IN关键字
+  -- 输出参数：c_sal_out OUT emp.sal%TYPE   带一个OUT关键字
+  -- 不需要声明变量
+  --c_name emp.ename%TYPE;
+  --c_sal  emp.sal%TYPE;
+begin
+  -- 查询出emp表中的某个员工的薪水，查询出来的字段直接赋值给输出变量
+  --                                查询的条件就是输入变量
+  select sal INTO c_sal_out from emp where empno = c_empno_in;
+  --也不需要打印的方法了
+  --dbms_output.put_line(c_name || '-' || c_sal);
+  --end后面可以没有名字：end ;
+end;
+调用：
+declare
+  -- plsql 调用存储过程
+  -- 声明变量接收出参存储过程的输出参数,一般都在程序中调用，不在plsq中调用
+  c_sal emp.sal%TYPE;
+begin
+  p_querysal_out(7788, c_sal);
+  dbms_output.put_line(c_sal); --这里的打印是看看是否返回成功
+end;

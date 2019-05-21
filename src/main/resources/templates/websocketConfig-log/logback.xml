@@ -30,8 +30,9 @@
             <!-- 活动文件的名字会根据fileNamePattern的值，每隔一段时间改变一次 -->
             <!-- 文件名：log/sys.2017-12-05.0.log -->
             <!-- 这是sys.log如果超过maxFileSize时存放的位置和文件命名规则 -->
-            <!--<fileNamePattern>logs/sys.%d.%i.log</fileNamePattern>-->
-            <fileNamePattern>${log.dir}/error.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip</fileNamePattern>
+            <!--<fileNamePattern>${log.dir}/sys-error.%d.%i.log</fileNamePattern>-->
+            <fileNamePattern>${log.dir}/error.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip
+            </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- maxFileSize:这是活动文件的大小，默认值是10MB,本篇设置为1KB，只是为了演示 -->
                 <!--<maxFileSize>1KB</maxFileSize>-->
@@ -56,7 +57,9 @@
     <appender name="root-file-warn" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.dir}/warn.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${log.dir}/warn.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip</fileNamePattern>
+            <!--<fileNamePattern>${log.dir}/sys-warn.%d.%i.log</fileNamePattern>-->
+            <fileNamePattern>${log.dir}/warn.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip
+            </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>${max.file.size}</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
@@ -77,7 +80,9 @@
     <appender name="root-file-info" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.dir}/info.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${log.dir}/info.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip</fileNamePattern>
+            <!--<fileNamePattern>${log.dir}/sys-info.%d.%i.log</fileNamePattern>-->
+            <fileNamePattern>${log.dir}/info.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip
+            </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>${max.file.size}</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
@@ -98,7 +103,9 @@
     <appender name="root-file-debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.dir}/debug.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${log.dir}/debug.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip</fileNamePattern>
+            <!--<fileNamePattern>${log.dir}/sys-debug.%d.%i.log</fileNamePattern>-->
+            <fileNamePattern>${log.dir}/debug.%d{${rolling.policy.file.name.pattern}}%d{mmss}.%i.log.zip
+            </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>${max.file.size}</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>

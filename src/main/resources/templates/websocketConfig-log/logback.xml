@@ -1,6 +1,8 @@
 <configuration scan="true" scanPeriod="10 seconds"
                debug="true">
-    <!-- 加载properties的配置文件de位置,不用加classpath -->
+    <!-- 加载properties的配置文件de位置,不用加classpath
+            属性应该直接放在application里
+        -->
     <property resource="templates/websocketConfig-log/logback.properties"/>
     <!--<property resource="logback.properties"/>-->
 

@@ -16,7 +16,10 @@
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 这是日志的目录:此时在本工程下,可以指定目录 -->
         <!--<File>D:/develop/workSpaces/idea_project/test-map/src/sys.log</File>-->
+        <!-- 会在当前工程下创建logs -->
         <File>logs/sys.log</File>
+        <!-- 会在当前盘符下创建logs -->
+        <!--<File>/logs/sys.log</File>-->
         <!-- rollingPolicy:当发生滚动时，决定 RollingFileAppender 的行为，涉及文件移动和重命名。 -->
         <!-- TimeBasedRollingPolicy： 最常用的滚动策略，它根据时间来制定滚动策略，既负责滚动也负责出发滚动 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">

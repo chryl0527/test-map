@@ -60,7 +60,8 @@
         <!--<table tableName="${table.name001}" domainObjectName="${entity.name001}">-->
 
         <!--</table>-->
-        <table tableName="${table.name002}" domainObjectName="${entity.name002}"/>
+        <!--<table tableName="${table.name002}" domainObjectName="${entity.name002}"/>-->
+        <table tableName="${table.name003}" domainObjectName="${entity.name003}"/>
 
     </context>
 </generatorConfiguration>

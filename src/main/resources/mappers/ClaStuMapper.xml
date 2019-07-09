@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sumsoon.zzz.mapper.ClaStuMapper">
+    <!-- resultMap 查出来对应dto的 -->
+    <resultMap id="BaseResultMap" type="com.sumsoon.service.model.StuClazModel">
+        <id column="clazz_id" jdbcType="INTEGER" property="clazzId"/>
+        <result column="clazz_name" jdbcType="VARCHAR" property="clazzName"/>
+
+        <!--<id column="student_id" jdbcType="INTEGER" property="studentId" />-->
+        <result column="student_id" jdbcType="INTEGER" property="studentId"/>
+        <result column="student_name" jdbcType="VARCHAR" property="studentName"/>
+        <result column="student_age" jdbcType="INTEGER" property="studentAge"/>
+        <!--<result column="claz_id" jdbcType="INTEGER" property="clazId" />-->
+    </resultMap>
+    <!-- 1.使用resultType=map ,mapper的参数为map,不手动维护dto属性和sql字段 -->
+    <select id="queryClazStuFromMap" resultType="map">
+        SELECT
+        s.student_id,s.student_name,s.student_age,s.claz_id,
+        c.clazz_id,c.clazz_name
+        FROM student s,clazz c
+        WHERE s.claz_id=c.clazz_id;
+    </select>
+    <!-- 2. 基本的resultMap model全字段对应解决一一对应 -->
+    <select id="queryClazStu" resultMap="BaseResultMap">
+        SELECT
+        s.student_id,s.student_name,s.student_age,s.claz_id,
+        c.clazz_id,c.clazz_name
+        FROM student s,clazz c
+        WHERE s.claz_id=c.clazz_id;
+    </select>
+
+    <!-- 3.使用resultMap（association）一对一维护 :需要在order中维护一个user对象-->
+    <!--resultMap参数说明：-->
+    <!--1. id指定查询列中的唯一标识，订单信息中的唯一标识，如果有多个列组成唯一标识，配置多个id。-->
+    <!--2. column：sql语句查询出的field-->
+    <!--3. property：与sql查询出的field 对应的实体字段-->
+    <resultMap id="OrdUser_ResultMap" type="com.sumsoon.zzz.po.Orders">
+        <id column="order_id" jdbcType="INTEGER" property="orderId"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <!--一个订单对应一个用户，所以使用association，property：要将关联查询的用户信息映射到Orders中哪个属性-->
+        <!--association参数说明：-->
+        <!--1.property：要关联查询的用户信息，本例中指Orders下的user属性。-->
+        <!--2.javaType：关联的属性的所属类-->
+        <!--3.id：关联查询用户的唯一标识-->
+        <!--4.column：sql语句查询出的field-->
+        <!--5.property：与sql查询出的field 对应的实体字段-->
+        <association property="user" javaType="com.sumsoon.zzz.po.User">
+            <id column="id" property="id"/>
+            <result column="user_name" property="userName"/>
+        </association>
+    </resultMap>
+    <select id="queryOrdersAndOrderDetailAndItems" resultMap="OrdUser_ResultMap">
+        SELECT
+        o.*,
+        u.id,u.user_name
+        FROM
+        user u,orders o
+        WHERE
+        u.id=o.user_id
+    </select>
+</mapper>

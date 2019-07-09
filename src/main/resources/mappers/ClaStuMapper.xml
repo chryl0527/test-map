@@ -29,7 +29,7 @@
         WHERE s.claz_id=c.clazz_id;
     </select>
 
-    <!-- 3.使用resultMap（association）一对一维护 :需要在order中维护一个user对象-->
+    <!-- 3.使用resultMap（association）一对一维护 :一个订单只有一个用户,需要在order中维护一个user对象-->
     <!--resultMap参数说明：-->
     <!--1. id指定查询列中的唯一标识，订单信息中的唯一标识，如果有多个列组成唯一标识，配置多个id。-->
     <!--2. column：sql语句查询出的field-->
@@ -58,4 +58,30 @@
         WHERE
         u.id=o.user_id
     </select>
+
+    <!-- 4.使用resultMap查询,关联关系为一对多查询:一个company有多个staff,需要在companys维护多个staff -->
+    <!--collection参数说明：-->
+    <!--一对多的时候，用collection。-->
+    <!--1.property：将关联查询到多条记录映射到Orders哪个属性-->
+    <!--2.ofType：指定映射到list集合属性中pojo的类型-->
+    <resultMap id="CompStaf_ResultMap" type="com.sumsoon.zzz.po.Companys">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="company_name" jdbcType="VARCHAR" property="companyName"/>
+        <!--一个公司可以有多个员工，所以要使用collection-->
+        <collection property="staffsList" ofType="com.sumsoon.zzz.po.Staffs">
+            <id column="staff_id" jdbcType="INTEGER" property="staffId"/>
+            <result column="company_id" jdbcType="INTEGER" property="companyId"/>
+            <result column="staff_name" jdbcType="VARCHAR" property="staffName"/>
+        </collection>
+    </resultMap>
+    <select id="queryCompStaffs" resultMap="CompStaf_ResultMap">
+        SELECT
+        c.id,c.company_name,
+        s.staff_id,s.staff_name,s.company_id
+        FROM
+        companys c,staffs s
+        WHERE
+        c.id=s.company_id
+    </select>
+    <!-- 5.使用resultMap查询,关联关系为多对多查询:多个collection嵌套使用 -->
 </mapper>

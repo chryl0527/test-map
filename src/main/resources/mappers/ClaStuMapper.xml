@@ -83,5 +83,42 @@
         WHERE
         c.id=s.company_id
     </select>
-    <!-- 5.使用resultMap查询,关联关系为多对多查询:多个collection嵌套使用 -->
+    <!-- 5.使用resultMap查询,关联关系为多对多he一对多复杂查询:多个collection嵌套使用association -->
+    <resultMap id="CPCC_ResultMap" type="com.sumsoon.zzz.po.Country">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="country_name" jdbcType="VARCHAR" property="countryName"/>
+        <!-- 一个国家有多个省 -->
+        <collection property="provinceList" ofType="com.sumsoon.zzz.po.Province">
+            <id column="id" jdbcType="INTEGER" property="id"/>
+            <result column="country_id" jdbcType="INTEGER" property="countryId"/>
+            <result column="province_name" jdbcType="VARCHAR" property="provinceName"/>
+            <!-- 一个省有多个市 -->
+            <collection property="cityList" ofType="com.sumsoon.zzz.po.City">
+                <id column="id" jdbcType="INTEGER" property="id"/>
+                <result column="province_id" jdbcType="INTEGER" property="provinceId"/>
+                <result column="city_name" jdbcType="VARCHAR" property="cityName"/>
+                <!-- 一个市有一个市政府 -->
+                <association property="cityGovernment" javaType="com.sumsoon.zzz.po.CityGovernment">
+                    <id column="id" jdbcType="INTEGER" property="id"/>
+                    <result column="city_id" jdbcType="INTEGER" property="cityId"/>
+                    <result column="city_government_name" jdbcType="VARCHAR" property="cityGovernmentName"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="queryCPCC" resultMap="CPCC_ResultMap">
+        SELECT
+        co.*,
+        pr.id,pr.province_name,
+        ci.id,ci.city_name,
+        ct.id,ct.city_government_name
+        FROM
+        country co,province pr,city ci,city_government ct
+        WHERE
+        co.id=pr.country_id
+        AND
+        pr.id=ci.province_id
+        AND
+        ci.id=ct.city_id
+    </select>
 </mapper>

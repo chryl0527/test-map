@@ -32,6 +32,7 @@ public class TestMapApplicationTests {
         String url = "http://127.0.0.1:8099/sb/queryAll";
         ResponseEntity<String> forEntity = restTemplate.getForEntity(url, String.class);
         System.out.println(forEntity);
+
     }
 
 }
